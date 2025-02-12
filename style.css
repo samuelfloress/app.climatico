@@ -1,0 +1,145 @@
+body {
+    background-color: #EEEEEE;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    background-color: #1f2949;
+    color: #ffffff;
+    max-width: 330px;
+    text-align: center;
+    background-image: url("/src/imagens/background.png");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.busca {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.busca input {
+    background-color: #0a1435;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.busca .btn-busca {
+    background-color: #0a1435;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    opacity: 0.8;
+}
+
+.busca .lupa {
+    width: 30px;
+    padding: 6px;
+    opacity: 0.8;
+}
+
+.informacao-principal {
+    margin: 30px;
+}
+
+.informacao-principal h1 {
+    font-size: 18px;
+}
+
+.informacao-principal .temperatura {
+    font-size: 68px;
+    margin: 20px 0;
+}
+
+.informacao-principal .condicao {
+    font-size: 20px;
+}
+
+.informacao-secundaria {
+    background-color: #ffffff;
+    color: #000;
+    padding: 20px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* 🔹 Alinhamento correto da umidade e do vento */
+.informacao-secundaria .humidade,
+.informacao-secundaria .velocidade-do-vento {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* 🔹 Mantém alinhado verticalmente */
+    padding: 10px 0;
+
+    .informacao-secundaria {
+    display: flex;
+    justify-content: space-around; /* Distribui os elementos uniformemente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Leve destaque */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.humidade, .velocidade-do-vento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 5px; /* Espaço entre o título e o valor */
+}
+
+/* Estilo opcional para destacar os números */
+#humidade, #velocidade-do-vento {
+    font-size: 22px;
+    color: #007bff;
+}
+
+}
+.busca {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-busca {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-busca {
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-busca:hover {
+    background: #0056b3;
+}
+

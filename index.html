@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previsao-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="busca">
+            <input type="text" id="input-busca" placeholder="digite uma cidade">
+
+            <button class="btn-busca">
+                <img src="/index/src/imagens/lupa.png" alt="lupa da busca">
+            </button>
+        </div>
+        <div class="informacao-principal">
+            <h1 id="cidade">use a lupa para ver o clima em uma cidade</h1>
+            <p class="temperatura " id="temperatura"></p>
+
+            <img id="icone-condicao"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png?_gl=1*1suw0c8*_ga*NzE3NzEwNDk4LjE3MjA5Nzk5NjA.*_ga_37GXT4VGQK*MTczODM4Mjk5Ni4xMjguMS4xNzM4MzgzMDM5LjAuMC4w"
+                alt="icone condição do clima">
+            <p class="condicao" id="condicao"></p>
+        </div>
+
+        <div class="informacao-secundaria">
+            <div class="humidade">
+                <span>humidade</span>
+                <span id="humidade">--</span>
+            </div>
+            <div>
+            <div class="velocidade-do-vento"></div>
+            <span>velocidade do vento</span>
+
+            <span id="velocidade-do-vento">--</span>
+        </div>
+     
+<script src="/index/index.js"></SCript>
+    </main>
+
+<p id="mensagem" class="mensagem"></p>
+
+
+    </body>
+
+</html>
